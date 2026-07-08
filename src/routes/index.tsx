@@ -64,15 +64,19 @@ function SignInPage() {
       {/* Bright halo around the form side */}
       <div className="pointer-events-none absolute inset-y-0 right-0 w-[55%] bg-form-halo" />
 
-      {/* Light pillar rays: emerge from globe center, widening toward the sign-in form.
-          Fades to transparent at its left edge so the origin blends seamlessly into the globe. */}
+      {/* Left-side shadow vignette on the globe for natural depth */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-[45%] bg-globe-shadow" />
+
+      {/* Light pillar rays: bloom out of the globe center, widening toward the form.
+          Soft radial mask erases the sharp start so it looks emitted from the sphere. */}
       <div
-        className="pointer-events-none absolute inset-y-0 left-[8%] right-0 hidden lg:block mix-blend-screen"
+        className="pointer-events-none absolute inset-y-0 left-[6%] right-0 hidden lg:block mix-blend-screen"
         style={{
           WebkitMaskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 8%, #000 22%, #000 100%)",
+            "radial-gradient(ellipse 90% 70% at 10% 50%, transparent 0%, rgba(0,0,0,0.15) 10%, rgba(0,0,0,0.55) 22%, #000 40%, #000 100%)",
           maskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 8%, #000 22%, #000 100%)",
+            "radial-gradient(ellipse 90% 70% at 10% 50%, transparent 0%, rgba(0,0,0,0.15) 10%, rgba(0,0,0,0.55) 22%, #000 40%, #000 100%)",
+          filter: "blur(0.5px)",
         }}
       >
         <LightPillar
