@@ -70,10 +70,11 @@ function SignInPage() {
             {/* Logo */}
             <div className="flex justify-center">
               <div className="flex h-14 w-14 items-center justify-center">
-                <Droplet
-                  className="h-12 w-12 text-brand"
-                  fill="currentColor"
-                  strokeWidth={0}
+                <img
+                  src={logoAsset.url}
+                  alt="Capgemini logo"
+                  className="h-12 w-12 object-contain"
+                  style={{ mixBlendMode: "multiply" }}
                 />
               </div>
             </div>
