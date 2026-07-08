@@ -246,12 +246,14 @@
   color: white;
   background: linear-gradient(
     90deg,
-    oklch(0.5 0.22 258) 0%,
-    oklch(0.55 0.2 250) 100%
+    #7cb8ff 0%,
+    #3d7ce0 45%,
+    #1a48a8 100%
   );
   box-shadow:
     0 8px 22px -8px rgba(0, 80, 220, 0.7),
-    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+    0 1px 0 rgba(255, 255, 255, 0.35) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.15) inset;
   transition:
     transform 0.15s ease,
     box-shadow 0.2s ease,
