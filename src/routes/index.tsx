@@ -3,8 +3,10 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, Eye, EyeOff, Droplet } from "lucide-react";
+import { Mail, Eye, EyeOff } from "lucide-react";
 import { ParticleGlobe } from "@/components/ParticleGlobe";
+import LightPillar from "@/components/LightPillar";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
