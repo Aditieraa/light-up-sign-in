@@ -130,7 +130,7 @@ function SignInPage() {
                   EMAIL
                 </label>
                 <div className="field-wrap">
-                  <Mail className="field-icon" aria-hidden="true" />
+                  <Mail className="field-icon !text-brand" aria-hidden="true" />
                   <input
                     id="email"
                     type="email"
