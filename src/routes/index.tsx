@@ -193,11 +193,11 @@ function SignInPage() {
 
               {/* Divider */}
               <div className="flex items-center gap-3 py-1">
-                <div className="h-px flex-1 bg-slate-200" />
-                <span className="text-[11px] font-medium tracking-[0.2em] text-slate-400">
+                <div className="h-px flex-1 bg-slate-300" />
+                <span className="text-[11px] font-semibold tracking-[0.2em] text-slate-500">
                   OR
                 </span>
-                <div className="h-px flex-1 bg-slate-200" />
+                <div className="h-px flex-1 bg-slate-300" />
               </div>
 
               {/* Footer */}
