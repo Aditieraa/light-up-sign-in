@@ -144,6 +144,17 @@
   );
 }
 
+/* Left-side natural shadow on the globe */
+@utility bg-globe-shadow {
+  background: radial-gradient(
+    ellipse 60% 80% at 0% 50%,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.45) 30%,
+    rgba(0, 0, 0, 0.15) 55%,
+    transparent 80%
+  );
+}
+
 
 /* Glassmorphic sign-in card — bright variant per reference */
 @utility glass-card {
