@@ -61,6 +61,23 @@ function SignInPage() {
       {/* Horizontal nebula flare from right side of globe toward form */}
       <div className="pointer-events-none absolute inset-y-0 left-[18%] w-[70%] bg-nebula-flare mix-blend-screen" />
 
+      {/* Light pillar rays: narrow at the globe, widening toward the sign-in form */}
+      <div className="pointer-events-none absolute inset-y-0 left-[20%] right-0 hidden lg:block">
+        <LightPillar
+          topColor="#5e86f2"
+          bottomColor="#a3c0ff"
+          intensity={0.9}
+          rotationSpeed={0.3}
+          interactive={false}
+          glowAmount={0.002}
+          pillarWidth={2.5}
+          pillarHeight={0.35}
+          noiseIntensity={0.5}
+          pillarRotation={90}
+          mixBlendMode="screen"
+        />
+      </div>
+
       {/* Content grid */}
       <div className="relative z-10 grid min-h-screen grid-cols-1 lg:grid-cols-2">
         <div className="hidden lg:block" />
